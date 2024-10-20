@@ -1,28 +1,28 @@
-import { createRouter, createWebHistory } from "vue-router";
-import RetoDiario from "../views/RetoDiario.vue";
-import HomeView from "../views/HomeView.vue";
-import FlashCardMenu from "../views/FlashCardMenu.vue";
-import ChatWeb from "../views/ChatWeb.vue";
-import StudyFlashCard from "../views/StudyFlashCard.vue";
+
+import { createRouter, createWebHistory } from 'vue-router';
+import LoginContainer from '../components/LoginContainer.vue';
+import RegisterContainer from '../components/RegisterContainer.vue';
+import ParesGame from '../components/ParesGame.vue';
+import RankingContainer from '../components/RankingContainer.vue';
+import MainMenu from '../components/MainMenu.vue';
+import ProfileContainer from '../components/ProfileContainer.vue';
 
 const routes = [
-    { path: '/', component: HomeView},
-    { path: '/retodiario', component: RetoDiario},
-    { path: '/flashcards', component: FlashCardMenu},
-    { path: '/chat', component: ChatWeb},
-    { path: '/flashcards/estudiar/:categoria/:usuarioId', 
-        name: 'Estudiar',
-        component: () => import('../views/StudyFlashCard.vue')
-    },
-    { path: '/flashcards/crear/:categoria/:usuarioId', 
-        name: 'Crear',
-        component: () => import('../views/CrearFlashCard.vue')
-    }
-]
+  { path: '/login',
+    name: 'Login',
+    component: LoginContainer
+  },
+  { path: '/register', name: 'Register', component: RegisterContainer },
+  { path: '/pares', name: 'Game', component: ParesGame },
+  { path: '/ranking', name: 'Ranking', component: RankingContainer },
+  { path: '/main', name: 'MainMenu', component: MainMenu },
+  { path: '/profile/:id', name: 'Profile', component: ProfileContainer, prop: true },
+];
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes
-})
+  history: createWebHistory(),
+  routes
+});
 
-export default router
+export default router;
+
