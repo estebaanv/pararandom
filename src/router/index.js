@@ -1,3 +1,4 @@
+
 import { createRouter, createWebHistory } from 'vue-router';
 import LoginContainer from '../components/LoginContainer.vue';
 import RegisterContainer from '../components/RegisterContainer.vue';
@@ -24,3 +25,4 @@ const router = createRouter({
 });
 
 export default router;
+
