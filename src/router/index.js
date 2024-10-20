@@ -6,6 +6,7 @@ import ParesGame from '../components/ParesGame.vue';
 import RankingContainer from '../components/RankingContainer.vue';
 import MainMenu from '../components/MainMenu.vue';
 import ProfileContainer from '../components/ProfileContainer.vue';
+import ChatWeb from '../views/ChatWeb.vue';
 
 const routes = [
   { path: '/login',
@@ -17,6 +18,7 @@ const routes = [
   { path: '/ranking', name: 'Ranking', component: RankingContainer },
   { path: '/main', name: 'MainMenu', component: MainMenu },
   { path: '/profile/:id', name: 'Profile', component: ProfileContainer, prop: true },
+   {path: '/chat', name: 'Chat', component: ChatWeb}
 ];
 
 const router = createRouter({
