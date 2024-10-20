@@ -10,7 +10,7 @@
       <div v-for="usuario in usuariosFiltrados" :key="usuario.id">
         <Chat
           v-if="usuario.id !== props.usuarioActualId"
-          :nombre="usuario.nombreUsuario" 
+          :nombre="usuario.usuario" 
           :imagen="usuario.imagen"
           @abrirChat="abrirChat(usuario)"
         />
@@ -70,7 +70,7 @@ const abrirChat = (usuario) => {
 const terminoBusqueda = ref('');
 const usuariosFiltrados = computed(() => {
   return usuarios.value.filter(usuario =>
-    usuario.nombreUsuario.toLowerCase().includes(terminoBusqueda.value.toLowerCase()) 
+    usuario.usuario.toLowerCase().includes(terminoBusqueda.value.toLowerCase()) 
   );
 });
 

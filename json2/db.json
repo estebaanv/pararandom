@@ -2,7 +2,7 @@
   "usuario": [
     {
       "id": "1",
-      "nombreUsuario": "Nanex",
+      "usuario": "Nanex",
       "rachaDiaria": 4,
       "contraseña": "123456",
       "xp": 10,
@@ -60,7 +60,7 @@
     },
     {
       "id": "2",
-      "nombreUsuario": "Goku",
+      "usuario": "Goku",
       "rachaDiaria": 3,
       "contraseña": "123456",
       "xp": 10,
@@ -93,7 +93,7 @@
     },
     {
       "id": "3",
-      "nombreUsuario": "iiesteban",
+      "usuario": "iiesteban",
       "rachaDiaria": 3,
       "contraseña": "123456",
       "xp": 10,

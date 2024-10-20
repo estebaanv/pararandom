@@ -2,7 +2,7 @@
   "usuario": [
     {
       "id": "1",
-      "nombreUsuario": "Nanex",
+      "usuario": "Nanex",
       "contraseña": "123456",
       "xp": 10,
       "nivel": 457,
@@ -12,7 +12,7 @@
     },
     {
       "id": "2",
-      "nombreUsuario": "iiesteban",
+      "usuario": "iiesteban",
       "contraseña": "esteban123",
       "xp": 0,
       "nivel": 420,
@@ -22,7 +22,7 @@
     },
     {
       "id": "3",
-      "nombreUsuario": "goku",
+      "usuario": "goku",
       "contraseña": "esteban123",
       "xp": 0,
       "nivel": 420,
